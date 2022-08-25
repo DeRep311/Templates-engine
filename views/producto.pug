@@ -1,0 +1,23 @@
+include partials/head.pug
+include partials/nav.pug
+div( clase = 'contenedor mt-5' ) 
+div( clase = 'fila' ) 
+div( clase = 'col' )
+        
+                form(id="productos" action="/productos" method='post')
+                    ul
+                        li
+                            label
+                            | Titulo
+                            input(id="1" type='text' name='title')
+                        li
+                            label
+                            | Precio
+                            input(id="2" type='text' name='price')
+                        li
+                            label
+                            | Thumbnail
+                            input( id="3" type='text' name='thumbnail')
+                        
+                            button(type='submit' value='Ingresar') Enviar
+                
